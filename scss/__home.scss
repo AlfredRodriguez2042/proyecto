@@ -1,0 +1,86 @@
+.content__home{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 280px;
+        display: block;
+    }
+}
+
+#output-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(black, .3);
+    color:#ddd;
+    font-family: serif;
+    font-weight: bold;
+    padding-top: 100px;
+    box-sizing: border-box;
+    display: none;
+}
+.home__portada{
+    position: relative;
+    width: 100%;
+    height: 500px;;
+    background: url(../imagen/fondos/cocina.jpg);
+   
+    background-size: cover;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    
+    
+}
+.home__intro{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2em;
+    padding-top: 2em;
+    h1{
+    margin-top: 0;
+    }
+    p{
+        margin-bottom: 0;
+    }
+    .hr{
+        width: 2em;
+        height: 5px;
+        margin: 0;
+        border: 0;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        background: none;
+        box-shadow: none;
+    }
+    
+}
+
+@media (min-width: 760px){
+    #output-container{
+        display: block;
+    }
+    .home__portada{
+        height: 600px;;
+    }
+    .content__centrado{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 50%);
+       
+    }
+}
+
+@media (min-width: 1060px){
+    #output-container{
+        padding-top: 80px;
+        padding-left: 12%;
+        padding-right: 12%;
+        font-size: 80px;
+    }
+    .home__portada{
+        height: 750px;;
+    }
+}

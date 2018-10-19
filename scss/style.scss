@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+@import "__var";
+@import "__footer";
+@import "__header";
+@import "__menu";
+ @import "__home";
+@import "__about-us";
+@import "__carta";
+ @import "__services";
+ @import "__contacts";
+// @import "";
+ body{
+     background: $blanco1;
+ }

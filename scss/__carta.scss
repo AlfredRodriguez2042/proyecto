@@ -1,0 +1,147 @@
+@import "__var";
+
+img{
+    display: block;
+}
+
+
+@media (min-width: 800px){
+    .ctn{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 50%);
+    }
+}
+
+@media(min-width: 1200px){
+
+
+    .ctn{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 33.33%);
+        grid-row: 50px;
+        
+    }
+    .description__menu{
+        height: 180%;
+    }
+ }
+
+
+
+
+.content__carta{
+   display: block;
+   max-width: 640px;
+   min-width: 400px;
+   display: table;
+}
+.container__menu{
+    max-width: 640px;
+    min-width: 400px;
+    max-height: 500px;
+    min-height: 350px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    display: block; 
+     &:hover .description__menu{
+        transform: translate(-15%, -18%) rotate(45deg);
+      
+     }
+     
+        img{
+            width: 100%;
+            height: 500px;
+        
+        }
+    .description__menu{
+        position: absolute;
+        top: 0;
+        width: 180%;
+        height: 175%;
+        background-color: rgba(black, .7);
+        opacity: .7;
+        padding: 6em;
+        
+        box-sizing: border-box;
+        transform: translate(90%, 95%) rotate(45deg);
+        transition: all 400ms ease-in-out;
+        text-align: center;
+        &:hover h2{
+            transform: translate(-22%, 850%) rotate(-45deg)
+        }
+        &:hover p{
+            transform: translate(-35%, 400%) rotate(-45deg)
+        }
+        h2{
+            color: white;
+            position: relative;
+            margin-top: 2em;
+            transform: translate(5%, -900%);
+            transition: all 300ms ease-in-out;
+        }
+        p{
+            color: #ddd;
+            width: 380px;
+            margin: auto;
+            transform: translate(-5%, 1200%);
+            transition: all 300ms ease-in-out;
+        }
+    }
+    
+    }
+  
+.uno{
+    background: url(../imagen/vegetables-752153_1920.jpg);
+}
+.dos{
+    background: url(../imagen/fondos/breakfast-690128_1920.jpg);
+}
+
+.carta__logo{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    
+    background-position: center center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    perspective: 100px;
+    .ctn__parallax{
+        width: 400px;
+        height: 200px;
+        position: relative;
+        padding: 2em;
+        box-shadow: 10px 6px 10px 4px black;
+        
+        font-size: 50px;
+        color: white;
+        
+    }
+    .caja{
+        width: 100%;
+        height: 100px;
+        
+    
+        
+    }
+
+}
+
+
+
+// @media (min-width: 760px){
+//     .ctn{
+//         display: grid;
+//         grid-template-columns: repeat(auto-fill, 50%);
+//        .container__menu{
+//         height: 100%;
+//            }
+//     }
+// }

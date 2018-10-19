@@ -1,0 +1,685 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+.content__footer {
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.92);
+  padding-top: 1px; }
+  .content__footer .content__creditos {
+    width: 80%;
+    max-width: 960px;
+    margin: auto; }
+  .content__footer .copy {
+    width: 300px; }
+    .content__footer .copy p {
+      color: #ddd;
+      line-height: 2.5em;
+      font-size: 20px; }
+  .content__footer .sociales {
+    width: 250px; }
+    .content__footer .sociales p {
+      color: #ddd; }
+    .content__footer .sociales ul {
+      list-style: none;
+      margin: 0; }
+      .content__footer .sociales ul li {
+        line-height: 2em;
+        color: #ddd; }
+        .content__footer .sociales ul li span {
+          color: white;
+          font-size: 1.5em; }
+
+@media screen and (min-width: 500px) {
+  .content__footer {
+    height: 200px; }
+  .content__creditos {
+    display: grid;
+    grid-template-columns: 350px 550px;
+    grid-gap: 10px; }
+    .content__creditos .copy {
+      display: inline-block; }
+    .content__creditos .sociales {
+      width: 400px;
+      display: inline-block; } }
+
+.content__logo {
+  width: 100%;
+  position: relative; }
+
+#canvas-basic {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -10; }
+
+.logo {
+  width: 70%;
+  height: 64px;
+  z-index: 50;
+  padding-top: 5px;
+  margin-left: 10%;
+  margin-right: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .logo #Capa_1 {
+    width: 230px; }
+
+path {
+  stroke: #fff;
+  fill: #fff;
+  stroke-dasharray: 1000;
+  -webkit-animation: animate 3s cubic-bezier(0, 0.23, 1, 0.1);
+  animation: animate 3s cubic-bezier(0, 0.23, 1, 0.1); }
+
+@-webkit-keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1000; }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1000; }
+  90% {
+    fill: rgba(255, 255, 255, 0); }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 1000; }
+  30% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 1000; }
+  90% {
+    fill: rgba(255, 255, 255, 0); }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@media (min-width: 450px) {
+  .logo {
+    margin-left: 21%; } }
+
+@media (min-width: 760px) {
+  .logo {
+    margin-left: 0; }
+    .logo #Capa_1 {
+      width: 250px; } }
+
+@media (min-width: 860px) {
+  .logo {
+    margin-left: 4%; }
+    .logo #Capa_1 {
+      width: 270px; } }
+
+@media (min-width: 960px) {
+  .logo {
+    margin-left: 8; }
+    .logo #Capa_1 {
+      width: 280px; } }
+
+@media (min-width: 1060px) {
+  .logo {
+    margin-left: 8%; }
+    .logo #Capa_1 {
+      width: 290px; } }
+
+@media (min-width: 1260px) {
+  .logo {
+    margin-left: 10%; }
+    .logo #Capa_1 {
+      width: 335px; } }
+
+.content__menu {
+  width: 90%;
+  height: 198px;
+  top: 64px;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 50;
+  display: none;
+  -webkit-transition: 350ms;
+  -o-transition: 350ms;
+  transition: 350ms; }
+  .content__menu:hover {
+    background: transparent; }
+
+#check {
+  display: none; }
+
+.icon-menu {
+  width: 1.5em;
+  color: #ddd;
+  display: block;
+  font-size: 26px;
+  padding: 4px;
+  cursor: pointer;
+  float: right;
+  position: relative;
+  z-index: 10; }
+
+#check:checked ~ .content__menu {
+  display: block; }
+
+.menu ul {
+  padding: 0;
+  margin: 0; }
+  .menu ul li {
+    list-style: none;
+    line-height: 2em;
+    border-bottom: 1px solid white; }
+    .menu ul li:hover {
+      background: rgba(221, 221, 221, 0.6); }
+    .menu ul li a {
+      text-decoration: none;
+      color: grey;
+      line-height: 2em;
+      padding: 0 2em;
+      display: block; }
+      .menu ul li a:hover {
+        color: white; }
+
+@media (min-width: 760px) {
+  .content__menu {
+    width: 100%;
+    height: auto;
+    top: 0;
+    display: block; }
+  .icon-menu {
+    display: none; }
+  .menu {
+    width: 65%;
+    margin-left: auto; }
+    .menu ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .menu ul li {
+        border-bottom: none;
+        -webkit-box-flex: 1;
+        -ms-flex: auto;
+        flex: auto; }
+        .menu ul li:hover {
+          border: 1px solid white; }
+        .menu ul li a {
+          padding: 1em;
+          text-align: center;
+          display: block; } }
+
+.content__home {
+  width: 100%; }
+  .content__home img {
+    width: 100%;
+    height: 280px;
+    display: block; }
+
+#output-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  color: #ddd;
+  font-family: serif;
+  font-weight: bold;
+  padding-top: 100px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none; }
+
+.home__portada {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: url(../imagen/fondos/cocina.jpg);
+  background-size: cover;
+  font-size: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: white; }
+
+.home__intro {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 2em;
+  padding-top: 2em; }
+  .home__intro h1 {
+    margin-top: 0; }
+  .home__intro p {
+    margin-bottom: 0; }
+  .home__intro .hr {
+    width: 2em;
+    height: 5px;
+    margin: 0;
+    border: 0;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+
+@media (min-width: 760px) {
+  #output-container {
+    display: block; }
+  .home__portada {
+    height: 600px; }
+  .content__centrado {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%); } }
+
+@media (min-width: 1060px) {
+  #output-container {
+    padding-top: 80px;
+    padding-left: 12%;
+    padding-right: 12%;
+    font-size: 80px; }
+  .home__portada {
+    height: 750px; } }
+
+.content__about-us {
+  width: 100%;
+  height: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../imagen/fondos/eat-2834549_1920.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .content__about-us .content__about {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3); }
+
+.content__mision, .content__vision, .content__who {
+  width: 80%;
+  position: relative;
+  padding-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .content__mision p, .content__vision p, .content__who p {
+    padding: 0 1em; }
+
+@media (min-width: 760px) {
+  .content__about-us {
+    width: 100%; }
+    .content__about-us .content__mision p, .content__about-us .content__vision p, .content__about-us .content__who p {
+      width: 70%;
+      max-width: 750px;
+      margin: auto; } }
+
+img {
+  display: block; }
+
+@media (min-width: 800px) {
+  .ctn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%); } }
+
+@media (min-width: 1200px) {
+  .ctn {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 33.33%);
+    grid-row: 50px; }
+  .description__menu {
+    height: 180%; } }
+
+.content__carta {
+  display: block;
+  max-width: 640px;
+  min-width: 400px;
+  display: table; }
+
+.container__menu {
+  max-width: 640px;
+  min-width: 400px;
+  max-height: 500px;
+  min-height: 350px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  display: block; }
+  .container__menu:hover .description__menu {
+    -webkit-transform: translate(-15%, -18%) rotate(45deg);
+    -ms-transform: translate(-15%, -18%) rotate(45deg);
+    transform: translate(-15%, -18%) rotate(45deg); }
+  .container__menu img {
+    width: 100%;
+    height: 500px; }
+  .container__menu .description__menu {
+    position: absolute;
+    top: 0;
+    width: 180%;
+    height: 175%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: .7;
+    padding: 6em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate(90%, 95%) rotate(45deg);
+    -ms-transform: translate(90%, 95%) rotate(45deg);
+    transform: translate(90%, 95%) rotate(45deg);
+    -webkit-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    text-align: center; }
+    .container__menu .description__menu:hover h2 {
+      -webkit-transform: translate(-22%, 850%) rotate(-45deg);
+      -ms-transform: translate(-22%, 850%) rotate(-45deg);
+      transform: translate(-22%, 850%) rotate(-45deg); }
+    .container__menu .description__menu:hover p {
+      -webkit-transform: translate(-35%, 400%) rotate(-45deg);
+      -ms-transform: translate(-35%, 400%) rotate(-45deg);
+      transform: translate(-35%, 400%) rotate(-45deg); }
+    .container__menu .description__menu h2 {
+      color: white;
+      position: relative;
+      margin-top: 2em;
+      -webkit-transform: translate(5%, -900%);
+      -ms-transform: translate(5%, -900%);
+      transform: translate(5%, -900%);
+      -webkit-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+    .container__menu .description__menu p {
+      color: #ddd;
+      width: 380px;
+      margin: auto;
+      -webkit-transform: translate(-5%, 1200%);
+      -ms-transform: translate(-5%, 1200%);
+      transform: translate(-5%, 1200%);
+      -webkit-transition: all 300ms ease-in-out;
+      -o-transition: all 300ms ease-in-out;
+      transition: all 300ms ease-in-out; }
+
+.uno {
+  background: url(../imagen/vegetables-752153_1920.jpg); }
+
+.dos {
+  background: url(../imagen/fondos/breakfast-690128_1920.jpg); }
+
+.carta__logo {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-perspective: 100px;
+  perspective: 100px; }
+  .carta__logo .ctn__parallax {
+    width: 400px;
+    height: 200px;
+    position: relative;
+    padding: 2em;
+    -webkit-box-shadow: 10px 6px 10px 4px black;
+    box-shadow: 10px 6px 10px 4px black;
+    font-size: 50px;
+    color: white; }
+  .carta__logo .caja {
+    width: 100%;
+    height: 100px; }
+
+@media (min-width: 320px) {
+  .body__services {
+    height: 300vh;
+    background: url(../imagen/fondos/food-791640_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+@media (min-width: 600px) {
+  .body__services {
+    height: 200vh;
+    background: url(../imagen/fondos/food-791640_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+@media (min-width: 1050px) {
+  .body__services {
+    height: 100vh;
+    background: url(../imagen/fondos/food-791640_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
+.content__services {
+  min-width: 300px;
+  max-width: 900px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.4);
+  background-position: center center;
+  background-size: cover;
+  padding: 40px;
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  -webkit-box-shadow: 10px 5px 20px -5px black;
+  box-shadow: 10px 5px 20px -5px black;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .content__services p {
+    color: white; }
+  .content__services h2 {
+    color: white; }
+  .content__services hr {
+    height: 2px;
+    border: 0;
+    background: crimson;
+    -webkit-box-shadow: 1px 3px 5px 1px black;
+    box-shadow: 1px 3px 5px 1px black; }
+  .content__services h3 {
+    position: relative;
+    padding: 5px 60px 5px 50px;
+    margin-left: -53px;
+    display: inline-block;
+    white-space: nowrap;
+    color: white;
+    font-weight: 100;
+    background: -webkit-linear-gradient(45deg, crimson, crimson 32px, rgba(204, 174, 174, 0) 32px), -webkit-linear-gradient(315deg, crimson, crimson 32px, rgba(204, 174, 174, 0) 32px), -webkit-linear-gradient(315deg, crimson, crimson);
+    background: -o-linear-gradient(45deg, crimson, crimson 32px, rgba(204, 174, 174, 0) 32px), -o-linear-gradient(315deg, crimson, crimson 32px, rgba(204, 174, 174, 0) 32px), -o-linear-gradient(315deg, crimson, crimson);
+    background: linear-gradient(45deg, crimson, crimson 32px, rgba(204, 174, 174, 0) 32px), linear-gradient(135deg, crimson, crimson 32px, rgba(204, 174, 174, 0) 32px), linear-gradient(135deg, crimson, crimson);
+    background-repeat: no-repeat;
+    background-position: 100% 100%, 100% 100%, -32px 100%;
+    background-size: 48px 100%, 48px 100%, 100% 100%; }
+  .content__services h3::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: .25em solid transparent;
+    border-bottom-color: crimson;
+    border-right-color: crimson;
+    top: -11px;
+    left: 0; }
+
+.content__contacts {
+  width: 100%; }
+
+.form {
+  min-width: 300px;
+  position: relative;
+  top: 3%; }
+
+.formulario {
+  max-width: 380px;
+  min-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.6);
+  padding-bottom: 1em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .formulario h1 {
+    color: #7f0c23;
+    text-align: center; }
+  .formulario .frm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-width: 400px;
+    width: 100%;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .formulario .input {
+    position: relative;
+    height: 2em;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1px;
+    margin-bottom: 2em;
+    border: 0;
+    -webkit-transition: all 300ms;
+    -o-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box; }
+    .formulario .input:focus {
+      border-bottom: 3px solid #ddd; }
+    .formulario .input:focus + .lbl {
+      margin-top: -90px; }
+  .formulario .lbl {
+    position: absolute;
+    margin-top: -60px;
+    padding: 0 .5em;
+    -webkit-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    color: #ad102f;
+    font-weight: bold; }
+  .formulario .fijar {
+    margin-top: -90px;
+    /* ------clase del JS-------*/ }
+  .formulario .txt-area {
+    border: 0;
+    min-width: 280px;
+    max-width: 400px;
+    min-height: 150px;
+    max-height: 250px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .formulario .btn__submit {
+    width: 60%;
+    line-height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background: crimson;
+    border-color: #ad102f;
+    color: #500716; }
+
+.fondo {
+  width: 100%;
+  height: 624px;
+  background: url(../imagen/los-ingredientes-basicos-de-la-gastronomia-espanola-1440x810.jpg);
+  z-index: -50; }
+  .fondo img {
+    width: 100%;
+    height: 610px; }
+
+@media (min-width: 900px) {
+  .fondo {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; } }
+
+.map__details {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background: lightpink;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: inline-block; }
+  .map__details h2 {
+    font-size: 30px;
+    color: #ad102f; }
+  .map__details p {
+    line-height: 2.3em;
+    color: crimson; }
+
+.local {
+  width: 100%;
+  max-width: 1503px;
+  height: 400px; }
+  .local img {
+    width: 100%;
+    height: 400px; }
+
+@media (min-width: 760px) {
+  .local {
+    width: 70%;
+    max-width: 1503px;
+    height: 400px;
+    float: right; }
+    .local img {
+      width: 100%;
+      height: 400px; }
+  .map__details {
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    background: lightpink;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block; }
+    .map__details h2 {
+      font-size: 30px;
+      color: #ad102f; }
+    .map__details p {
+      line-height: 2.3em;
+      color: crimson; } }
+
+.frame {
+  width: 100%;
+  min-width: 300px;
+  height: 400px; }
+  .frame iframe {
+    width: 100%;
+    height: 400px; }
+
+body {
+  background: #ddd; }

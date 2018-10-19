@@ -1,0 +1,195 @@
+@import "__var";
+
+.content__contacts{
+    width: 100%;
+}
+
+.form{
+    min-width: 300px;
+    position: relative;
+    top: 3%;
+    
+}
+.formulario{
+    max-width: 380px;
+    min-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    background:rgba(white, .6);
+    padding-bottom: 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    h1{
+        color: darken($rojo1, 20);
+        text-align: center;
+    }
+    .frm{
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+        padding: 1em;
+        box-sizing: border-box;
+    
+        
+    }
+    .input{
+        position: relative;
+        height: 2em;
+        width: 100%;
+        background: rgba(white, .1);
+        padding: 1px;
+        margin-bottom: 2em;
+        border: 0;
+        transition: all 300ms;
+        box-sizing: content-box;
+        &:focus{
+            border-bottom: 3px solid #ddd;
+        }
+        &:focus + .lbl{
+            margin-top: -90px;
+           
+        }
+        
+        
+    }
+    .lbl{
+        position: absolute;
+        margin-top: -60px;
+        padding: 0 .5em;
+        transition: 300ms;
+        color: darken($rojo1, 10);
+        font-weight: bold;
+    }
+    
+    .fijar{
+        margin-top: -90px;    /* ------clase del JS-------*/
+    }
+   .txt-area{
+       border: 0;
+    min-width: 280px;
+    max-width: 400px;
+    min-height: 150px;
+    max-height: 250px;
+    background: rgba(white, .7);
+    padding: 1em;
+    box-sizing: border-box;
+   }
+   .btn__submit{
+       width: 60%;
+       line-height: 2em;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 10px;
+       background: $rojo1;
+       border-color: darken($rojo1, 10);
+       color: darken($rojo1, 30);
+   }
+
+
+
+
+}
+
+.fondo{
+    width: 100%;
+    height: 624px;
+    
+    background: url(../imagen/los-ingredientes-basicos-de-la-gastronomia-espanola-1440x810.jpg);
+    z-index: -50;
+   
+    img{
+        width: 100%;
+        height: 610px;
+    }
+}
+@media(min-width: 900px){
+    .fondo{
+    
+        background-position: center center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+}
+
+.map__details{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background: lightpink;
+    
+    box-sizing: border-box;
+    display: inline-block;
+    h2{
+        font-size: 30px;
+        color: darken($rojo1,10)
+    }
+    p{
+        line-height: 2.3em;
+        color: $rojo1;
+    }
+}
+
+
+.local{
+    
+    width: 100%;
+    max-width: 1503px;
+    height: 400px;
+    
+    
+    img{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+@media(min-width: 760px){
+
+    .local{
+    
+        width: 70%;
+        max-width: 1503px;
+        height: 400px;
+        float: right;
+        
+        img{
+            width: 100%;
+            height: 400px;
+        }
+    }
+    .map__details{
+        width: 30%;
+        height: 400px;
+        text-align: center;
+        background: lightpink;
+        
+        box-sizing: border-box;
+        display: inline-block;
+        h2{
+            font-size: 30px;
+            color: darken($rojo1,10)
+        }
+        p{
+            line-height: 2.3em;
+            color: $rojo1;
+        }
+    }
+
+}
+
+
+
+.frame{
+    width: 100%;
+    min-width: 300px;
+    height: 400px;
+    iframe{
+        width: 100%;
+        height: 400px;
+    }
+}

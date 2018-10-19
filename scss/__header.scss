@@ -1,0 +1,116 @@
+.content__logo{
+    width: 100%;
+    position: relative;
+   
+    
+}
+
+// ----------------estilos gradientes-------------
+
+#canvas-basic {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+// ----------------------fin----------------------
+
+
+
+
+
+
+.logo{
+    width: 70%;
+    height: 64px;
+    z-index: 50;
+    padding-top: 5px;
+    margin-left: 10%;
+    margin-right: auto;
+    box-sizing: border-box;
+    #Capa_1{
+        width: 230px;
+       
+    }
+}
+path {
+    stroke: #fff;
+    fill: #fff;
+    stroke-dasharray: 1000;
+    animation: animate 3s cubic-bezier(0,0.23,1,.1);
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1000;
+    }
+    30%{
+        opacity: 10;
+        fill: none;
+        stroke-dashoffset: 1000;
+    }
+    90%{
+        fill: rgba(255,255,255,0)
+    }
+    100%{
+        opacity: 10;
+        fill: rgba(255,255,255,1);
+
+    }
+    
+}
+
+@media(min-width: 450px){
+    .logo{
+        margin-left: 21%;
+    }
+}
+
+
+@media (min-width: 760px){
+    .logo{
+        margin-left: 0;
+        #Capa_1{
+            width: 250px;
+        }
+    }
+}
+@media (min-width: 860px){
+    .logo{
+        margin-left: 4%;
+        #Capa_1{
+            width: 270px;
+        }
+    }
+}
+@media (min-width: 960px){
+    .logo{
+        margin-left: 8;
+        #Capa_1{
+            width: 280px;
+        }
+    }
+}
+@media (min-width: 1060px){
+    .logo{
+        margin-left: 8%;
+        #Capa_1{
+            width: 290px;
+        }
+    }
+}
+@media (min-width: 1260px){
+    .logo{
+        margin-left: 10%;
+        #Capa_1{
+            width: 335px;
+        }
+    }
+}

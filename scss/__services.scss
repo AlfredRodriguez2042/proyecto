@@ -1,0 +1,114 @@
+@import "__var";
+
+
+
+@media (min-width: 320px){
+
+
+.body__services{
+    height: 300vh;
+    background:  url(../imagen/fondos/food-791640_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .content__services{
+       
+        
+    }
+
+}  
+
+}
+
+@media (min-width: 600px){
+
+
+    .body__services{
+        height: 200vh;
+        background:  url(../imagen/fondos/food-791640_1920.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .content__services{
+            
+        }
+        
+    }  
+    
+}
+@media (min-width: 1050px){
+
+
+    .body__services{
+        height: 100vh;
+        background:  url(../imagen/fondos/food-791640_1920.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }  
+    
+ }
+
+
+
+.content__services{
+    min-width: 300px;
+    max-width: 900px;
+    height: auto;
+    background: rgba(black, .4);
+    background-position: center center;
+    background-size: cover;
+    padding: 40px;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 12px;
+    box-shadow: 10px 5px 20px -5px black;
+    box-sizing: border-box;
+    p{
+        color: white;
+    }
+    h2{
+        color: white;
+    }
+
+hr{
+    height: 2px;
+    border: 0;
+    background: $rojo1;
+    box-shadow: 1px 3px 5px 1px black;
+}
+ h3{
+     position: relative;
+     padding: 5px 60px 5px 50px;
+     margin-left: -53px;
+     display: inline-block;
+     white-space: nowrap;
+     color: white;
+     font-weight: 100;
+     background: linear-gradient( 45deg, $rojo1, $rojo1 32px, rgba(204, 174, 174, 0)32px),
+                 linear-gradient( 135deg, $rojo1, $rojo1 32px, rgba(204, 174, 174, 0)32px),
+                 linear-gradient(135deg, $rojo1, $rojo1);
+     background-repeat: no-repeat;
+     background-position: 100% 100%, 100% 100%, -32px 100%;
+     background-size: 48px 100%, 48px 100%, 100% 100%;
+                
+ }
+
+h3::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: .25em solid transparent;
+    border-bottom-color: $rojo1;
+    border-right-color: $rojo1;
+    top: -11px;
+    left: 0;
+}
+
+}
+
+
+    

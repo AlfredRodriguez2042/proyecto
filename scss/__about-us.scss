@@ -1,0 +1,46 @@
+.content__about-us{
+    width: 100%;
+    height: 760px;;
+    
+    margin-left: auto;
+    margin-right: auto;
+    background: url(../imagen/fondos/eat-2834549_1920.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .content__about{
+        width: 100%;
+        height: 100%;
+        background: rgba(white, .3  )
+    }
+    
+}
+.content__mision, .content__vision, .content__who{
+    width: 80%;
+    position: relative;
+    padding-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+    p{
+        padding: 0 1em;
+    }
+}
+
+
+@media  (min-width: 760px){
+    .content__about-us{
+        width: 100%;
+        
+        
+        .content__mision, .content__vision, .content__who{
+            p{
+                width: 70%;
+                max-width: 750px;
+                margin: auto;
+            }
+        }
+    }
+    
+}
