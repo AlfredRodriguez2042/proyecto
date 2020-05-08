@@ -1,4 +1,4 @@
-[UI](/image.png?raw=true)
+![UI](/image.png?raw=true)
 
 # proyecto
 
